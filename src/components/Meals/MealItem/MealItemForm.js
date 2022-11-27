@@ -34,10 +34,10 @@ const MealItemForm = (props) => {
           max: "5",
           step: "1",
           default: "1",
-        }}
+        }}                                  
       />
-      <button>+ Add</button>
-      {!amountIsValid && <p>Please enter a valid amount (1-5).</p>}
+      <button className={classes.btnCustom}>+ Add</button>
+      {!amountIsValid && <p className={classes.smeta}>Enter 1-5 items.</p>}
     </form>
   );
 }; 
